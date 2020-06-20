@@ -36,15 +36,13 @@ import { DataService } from "./data.service";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
-  user: GraphUser;
+
 
   constructor(private dataService: DataService) {
-    let that = this;
+
   }
 
   ngOnInit() {
-    this.dataService.getUser().subscribe((u: GraphUser) => {
-      this.user = u;
-    });
+ 
   }
 }
